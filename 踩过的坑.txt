@@ -1,0 +1,3 @@
+1，app.json中的pages的 "page/index/index",顺序很重要，如果前面的页面存在错误会影响后面正常的页面
+2、require xx.js文件时，必须module.exports.sayHello = sayHello，
+	 require('../template/contract/contract.js')相对路径为/template/contract/contract.js的相对路径+../同一个父文件夹

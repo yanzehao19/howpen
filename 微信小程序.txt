@@ -1,0 +1,3 @@
+AppID(小程序ID) 	wx8b976ffb1df58f74
+
+AppSecret(小程序密钥)   cdf1e2947debef49ecb500568a2a36be
