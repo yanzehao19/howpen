@@ -69,7 +69,8 @@
     "page/API/pages/open-location/open-location",
     "page/API/pages/choose-location/choose-location",
     "page/API/pages/storage/storage",
-    "page/food/food"
+    "page/food/food",
+    "page/myshop/myshop"
   ],
   "window": {
     "navigationBarTextStyle": "black",

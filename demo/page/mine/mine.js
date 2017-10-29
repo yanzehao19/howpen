@@ -38,6 +38,12 @@ Page({
       url: '../order/order'
     })
   },
+
+  navi:function() {
+    wx.navigateTo({
+      url: '../myshop/myshop',
+    })
+  },
   onLoad: function () {//在加载过程中，获取用户的信息
     console.log('onLoad')
     var that = this

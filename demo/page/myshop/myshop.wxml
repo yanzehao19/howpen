@@ -1,0 +1,5 @@
+<!--page/myshop/myshop.wxml-->
+<text>page/myshop/myshop.wxml</text>
+
+<view bindtap='choseimage'>选取照片</view>
+<image src='{{imageurl}}'></image>
