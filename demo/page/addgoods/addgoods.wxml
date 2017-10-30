@@ -1,0 +1,31 @@
+<view>
+  <view>商品名称</view>
+  <view class='goods'>
+    <input placeholder="填写商铺名" />
+  </view>
+
+  <view>商品名称</view>
+  <view class='goods'>
+    <input placeholder="填写商铺名" />
+  </view>
+
+  <view>商品名称</view>
+  <view class='goods'>
+    <input placeholder="填写商铺名" />
+  </view>
+
+  <view>点击添加图片</view>
+  <view class='image'>
+    <block wx:if="{{imageurl.length>0}}">
+      <block wx:for="{{imageurl}}">
+        <image class='image-item' src="{{item}}" bindtap='previewimage' />
+        <view class='deletebtn' data-index="{{index}}" catchtap='deleteimage'></view>
+      </block>
+    </block>
+    <image class='image-add' src='../../image/add.png' bindtap='choseimage' />
+  </view>
+  <view>
+    <button>提交</button>
+  </view>
+
+</view>

@@ -50,6 +50,16 @@
       <image class="item-image" src="../../image/person/personal_share.png"></image>
       <text class="item-text" bindtap='navi'>推广邀请</text>
     </view>
+    <view class="person-line"></view>
+    <view class="list-item">
+      <image class="item-image" src="../../image/person/personal_share.png"></image>
+      <text class="item-text" bindtap='shopin'>商铺入驻</text>
+    </view>
+    <view class="person-line"></view>
+    <view class="list-item">
+      <image class="item-image" src="../../image/person/personal_share.png"></image>
+      <text class="item-text" bindtap='myshop'>我的商铺</text>
+    </view>
   </view>
   <view class="separate"></view>
 </view>

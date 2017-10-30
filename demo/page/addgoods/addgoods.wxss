@@ -1,0 +1,29 @@
+/* page/addgoods/addgoods.wxss */
+
+.deletebtn {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+}
+
+.goods {
+  width: 90%;
+  height: 50rpx;
+  border: 1px solid;
+  margin-left: 5px;
+}
+
+.image {
+  width: 100%;
+  flex-direction: column;
+}
+
+.image-item {
+  width: 25%;
+  height: 60px;
+}
+
+.image-add {
+  width: 60rpx;
+  height: 60rpx;
+}

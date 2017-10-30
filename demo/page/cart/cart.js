@@ -151,6 +151,18 @@ Page(Object.assign({}, Temp.Wdg, {
       icon: 'success',
       duration: 3000
     });
+
+    wx.requestPayment({
+      'timeStamp': '',
+      'nonceStr': '',
+      'package': '',
+      'signType': 'MD5',
+      'paySign': '',
+      'success': function (res) {
+      },
+      'fail': function (res) {
+      }
+    });
     this.setData({
       showDialog: !this.data.showDialog
     });

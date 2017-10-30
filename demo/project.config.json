@@ -9,7 +9,7 @@
 	"compileType": "weapp",
 	"libVersion": "1.6.0",
 	"appid": "wx8b976ffb1df58f74",
-	"projectname": "%E5%A5%BD%E6%9C%8B",
+	"projectname": "howpen",
 	"condition": {
 		"weapp": {
 			"current": -1,

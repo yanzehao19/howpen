@@ -84,17 +84,15 @@
   width: 100px;
 }
 
-.recommend-item .wrapper1 view{
+.recommend-item .wrapper1 view {
   font-size: 25rpx;
   color: gray;
   display: block;
   text-align: right;
 }
 
-
-.line{
+.line {
   width: 90%;
   height: 2rpx;
-  background:  	#B0C4DE
-
+  background: #b0c4de;
 }

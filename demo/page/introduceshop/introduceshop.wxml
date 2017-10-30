@@ -1,0 +1,10 @@
+<view>
+  <view>
+    <image src='../../image/myshop/myshop.png' />
+    <view>商铺名称</view>
+  </view>
+  <view>配送信息</view>
+  <view>活动</view>
+  <view>商铺信息</view>
+  <view>营业资质</view>
+</view>

@@ -1,0 +1,25 @@
+.shopname{
+  width: 90%;
+  height: 50rpx;
+  border: 1px solid;
+  margin-left: 5px;
+
+}
+
+.image{
+  width:100%;
+
+}
+.image-item{
+width:25%;
+height:60px;
+
+
+
+}
+
+.image-add{
+ width:60rpx;
+height:60rpx;
+
+}

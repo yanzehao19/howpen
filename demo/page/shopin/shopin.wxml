@@ -1,0 +1,54 @@
+<view>商铺入驻</view>
+<view>
+  <view>
+    <view>商铺名</view>
+    <view class='shopname'>
+      <input placeholder="填写商铺名" />
+    </view>
+  </view>
+  <view>
+    <view>商铺介绍</view>
+    <view class='shopname'>
+      <input placeholder="填写商铺名" />
+    </view>
+  </view>
+  <view>
+    <view>品类</view>
+    <view class='shopname'>
+      <input placeholder="填写品类" />
+    </view>
+  </view>
+
+  <view>电话</view>
+  <view class='shopname'>
+    <input placeholder="填写电话" />
+  </view>
+  <view>地址</view>
+  <view class='shopname'>
+    <input placeholder="填写地址" />
+  </view>
+
+  <view>营业时间</view>
+  <view class='shopname'>
+    <input placeholder="填写营业时间" />
+  </view>
+
+  <view>营业资质</view>
+  <view class='shopname'>
+    <input placeholder="填写营业时间" />
+    <view>
+    </view>
+  </view>
+  <view>点击添加图片</view>
+  <view class='image'>
+    <block wx:if="{{imageurl.length>0}}">
+      <block wx:for="{{imageurl}}">
+        <image class='image-item' src="{{item}}" bindtap='previewimage' />
+      </block>
+    </block>
+    <image class='image-add' src='../../image/add.png' bindtap='choseimage' />
+  </view>
+  <view>
+    <button>提交</button>
+  </view>
+</view>
