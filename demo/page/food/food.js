@@ -5,8 +5,13 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    orderItems1:[
+      '全部','香锅','便当'
+    ],
+    topTabItems: ["全部", "香锅", "便当"],
+    currentTopItem: "0",
   },
+  
 
   /**
    * 生命周期函数--监听页面加载
@@ -62,5 +67,10 @@ Page({
    */
   onShareAppMessage: function () {
   
-  }
+  },
+  switchTab: function (e){
+  this.setData({
+    currentTopItem: e.currentTarget.dataset.idx
+  })
+  },
 })

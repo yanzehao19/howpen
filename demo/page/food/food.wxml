@@ -1,2 +1,32 @@
-<!--page/food/food.wxml-->
-<text>page/food/food.wxml</text>
+<view class="top-tab">
+  <view class="top-tab-item {{currentTopItem==idx ? 'active' : ''}}" wx:for="{{topTabItems}}" wx:for-index="idx" data-idx="{{idx}}" bindtap="switchTab">
+    {{item}}
+  </view>
+</view>
+
+
+<swiper class='swiper' style="height:{{swiperHeight}}px">
+
+  <!--
+   <block wx:for-items="{{orderItems1}}" wx:key="name">
+      <swiper-item>
+      <view class="nav-item" catchtap="toOrder" data-type="{{item.name}}" data-typeid="{{item.typeId}}">
+        <text>{{item}}</text>
+      </view>
+      </swiper-item>
+    </block>
+   -->
+
+  <swiper-item>
+    <text>测试</text>
+  </swiper-item>
+
+  <swiper-item>
+    <text>测试</text>
+  </swiper-item>
+  <swiper-item>
+    <text>测试</text>
+  </swiper-item>
+
+
+</swiper>
