@@ -57,7 +57,7 @@
 </view>
 <view class="recommend">
   <block wx:for="{{recommendshop}}">
-    <view class="recommend-item">
+    <view class="recommend-item" bindtap='toMyshop'>
       <image src="{{item.imageurl}}" class="recommend-image" />
       <view class="wrapper">
         <view class="name">{{item.name}}</view>

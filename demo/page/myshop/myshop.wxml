@@ -1,10 +1,12 @@
+<import src="../template/contract/contract.wxml" />
+
 <view class='myshop'>
-  <image class="image" src="../../image/myshop/myshop.png"/>
+  <image class="image" src="../../image/myshop/myshop.png" />
   <view class='wrapper'>
-  <view bindtap='tointroduceshop'>商店信息></view>
-   <view>商店信息</view>
+    <view bindtap='tointroduceshop'>商店信息></view>
     <view>商店信息</view>
-    </view>
+    <view>商店信息</view>
+  </view>
 </view>
 
 <view class='line'></view>
@@ -22,20 +24,35 @@
   <view class="nav_right">
     <!--如果有数据，才遍历项-->
     <view wx:if="{{cateItems[curIndex].ishaveChild}}">
-      <block wx:for="{{cateItems[curIndex].children}}">
         <view class="nav_right_items">
-          <!--界面跳转 -->
-          <navigator url="../../detail/detail">
-            <image src="{{item.image}}"></image>
-            <text>{{item.name}}</text>
-          </navigator>
+          <scroll-view class="scroll" scroll-y="true">
+            <view class="separate"></view>
+            <view wx:for="{{carts}}">
+              <view class="cart_container">
+              
+                <image class="item-image" src="{{item.pic}}"></image>
+
+                <view class="column">
+                  <text class="title">{{item.name}}</text>
+                  <view class="row">
+                    <text class="sku-price">￥</text>
+                    <text class="sku-price">{{item.price}}</text>
+                    <view class="sku">
+                      <template is="quantity" data="{{...item.count, componentid:index}}" />
+                    </view>
+                  </view>
+
+                </view>
+              </view>
+              <view class="separate"></view>
+            </view>
+          </scroll-view>
         </view>
-      </block>
     </view>
     <!--如果无数据，则显示数据-->
     <view class="nodata_text" wx:else>该分类暂无数据</view>
-    <view><button  bindtap='addgoods'>添加商品</button></view>
-      
     
+
+
   </view>
 </view>

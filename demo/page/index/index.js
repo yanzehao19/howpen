@@ -127,5 +127,12 @@ Page({
       }
     })
  
-  }
+  },
+
+  toMyshop:function(){
+    wx.navigateTo({
+      url: '../myshop/myshop',
+    })
+  },
+
 })

@@ -102,7 +102,7 @@
         "selectedIconPath": "image/index/cart_chose.png",
         "iconPath": "image/index/cart.png",
         "pagePath": "page/cart/cart",
-        "text": "购物车"
+        "text": "订单"
       },
       {
         "selectedIconPath": "image/index/user_chose.png",
